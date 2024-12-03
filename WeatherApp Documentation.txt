@@ -1,0 +1,54 @@
+12/27/23 coding excersise
+Titled: Weather App
+went through a walkthrough to build a weather app
+
+one thing to learn and focus on is the css styling of things if I had a complete
+understanding of how to align things, pixel sizes, font sizes. Front end programming
+will become easier.
+
+touched on a bit of html today, classes are extremely important. It allows you 
+to assign images to the declared class, even within a class you can declare another
+class for you to store more things.
+
+images can be attributed to a class within a single line.
+CSS is a rudementary programming language, it focuses more on developing the look
+of things. I wouldn't say it excludes functionality but from what i can tell the
+language isn't as math heavy as java or python.
+
+divs are used to call classes.
+
+make sure to research scripts in CSS
+
+in order to use an api within the css code, an api key needs to be generated a url
+should be given to use as a tool to access the api
+
+its a good idea to put the function name at the end of the statement to call the
+function when the code runs.
+
+I had some trouble figuring out this bit of code right here
+const searchBox = document.querySelector(".search input");
+const searchBtn = document.querySelector(".search button")
+document refers to the html documentation, querySelector calls a method and 
+.search input and search button are the css selectors I had made.
+
+
+another bit of code when disected
+ searchBtn.addEventListener("click", ()=>{
+        checkWeather(searchBox.value);
+adding an eventListener to searchBtn, so when the user "clicks" the program will know
+the click will trigger the program to call the value of searchBox. 
+Having the checkWeather function in the program will be used to call the entire
+function since we removed the singular checkWeather();
+
+added another eventListner to the code so if a user presses the enter key when 
+inputing the city name it would still execute
+searchBox.addEventListener("keydown", (event) => {
+    // Check if the pressed key is Enter (key code 13)
+    if (event.keyCode === 13) {
+        checkWeather(searchBox.value);
+        }
+    });
+
+finished at 2:55am 12/28/2023
+
+
